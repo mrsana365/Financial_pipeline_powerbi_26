@@ -1,0 +1,1 @@
+AvergeLoan = AVERAGE(combined_df[Num of loan])

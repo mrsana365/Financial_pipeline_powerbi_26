@@ -1,0 +1,17 @@
+LoanTypeTable = 
+VAR LoanTypeData = 
+    GENERATE(
+        'combined_df',
+            VAR LoanTypeList = SUBSTITUTE('combined_df'[Type_of_Loan], ",", "|")
+            RETURN
+              ADDCOLUMNS (
+                    GENERATESERIES(1, PATHLENGTH(LoanTypeList)),
+                    "LoanType", TRIM((PATHITEM(LoanTypeList, [Value], TEXT)))
+            )
+    )
+RETURN
+    SELECTCOLUMNS(
+        LoanTypeData,
+        "Customer ID", 'combined_df'[Customer_ID],
+        "LoanType", Trim(SUBSTITUTE([LoanType],"and",""))
+    )

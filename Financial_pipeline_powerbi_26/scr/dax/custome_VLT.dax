@@ -1,0 +1,34 @@
+Customer VLT = 
+var AvgAnnualIncome = CALCULATE(AVERAGE(combined_df[Annual_Income] ))
+var AvgDelayFromDueDate = CALCULATE(AVERAGE(combined_df[Delay_from_due_date]))
+var AvgAmountInterest = CALCULATE(AVERAGE(combined_df[Amount_invested_monthly]))
+var AvgMonthlyBalance = CALCULATE(AVERAGE(combined_df[Monthly_Balance]))
+var AvgCreditScore =
+    AVERAGEX(
+        VALUES(combined_df[Credit_Mix]),
+        SWITCH(
+            TRUE(),
+            combined_df[Credit_Mix] = "Good",3,
+            combined_df[Credit_Mix] = "Above Standard",2,
+            combined_df[Credit_Mix] = "Standard",1,
+            combined_df[Credit_Mix] = "Bad",0
+        )
+    )
+
+var LTV = 
+    (0.3 * AvgAnnualIncome -
+    0.15 * AvgDelayFromDueDate +
+    0.4 * AvgCreditScore +
+    0.75 * AvgAmountInterest +
+    0.75 * AvgMonthlyBalance
+    )
+
+RETURN
+    SWITCH(
+        TRUE(),
+        ( LTV > 80000  ), "30% off on online purchases + home loan at 4% Interest",
+        ( LTV > 60000 && LTV <= 80000 ) ,  "15% off on online purchases+10000 worth gift hampers",
+        ( LTV > 50000 && LTV <= 60000 ) , "Any loan at 5% interest rate",
+        "Standard rates apply"
+    )
+   

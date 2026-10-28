@@ -1,0 +1,5 @@
+Potential Customers = 
+VAR AvgInquiry = AVERAGE(combined_df[Num Credit Inquiries])
+RETURN
+    IF(AvgInquiry >7.5, "Potential Customer", BLANK())
+    
