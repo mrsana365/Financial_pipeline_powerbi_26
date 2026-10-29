@@ -293,8 +293,8 @@ Financial_pipeline_powerbi_26/
 | Resource | Link |
 | --- | --- |
 | 📊 **Power BI Dashboard** | [View Dashboard](https://app.powerbi.com/groups/me/reports/1a30b8e5-8981-4534-8236-717ca2b0fd0f?ctid=95cd5fc7-eedf-4dcd-8986-48528f05d39f&pbi_source=linkShare&bookmarkGuid=da27139e-f350-4acb-a32c-b5f40a0b4e3b) |
-| 🐍 **Python ETL Script** | [GitHub/Gist link](Financial_pipeline_powerbi_26\src\python\drive_combine_pipeline.ipynb) |
-| 📁 **Sample Dataset** | [sanitized sample data](Financial_pipeline_powerbi_26\data\combined_part_1.xlsx) |
+| 🐍 **Python ETL Script** | [GitHub/Gist link](Financial_pipeline_powerbi_26\src\python) |
+| 📁 **Sample Dataset** | [sanitized sample data](Financial_pipeline_powerbi_26\data) |
 | 📝 **Project Notes (DAX/Power Query)** | [documentation](Financial_pipeline_powerbi_26\src\dax) |
 
 ---
