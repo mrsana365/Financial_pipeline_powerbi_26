@@ -1,7 +1,6 @@
-Here is the raw Markdown code for your project. You can easily copy and paste this directly into your GitHub `README.md` file:
 
 
-# Financial Data Analytics & Dashboard Solution
+# Mail2Dash - Automated Financial Dashboard Pipeline and Analysis
 
 > An end-to-end automated financial analytics pipeline that transforms raw daily email files into an interactive Power BI dashboard — eliminating manual ETL, reducing costs, and delivering actionable insights for a US government client.
 
