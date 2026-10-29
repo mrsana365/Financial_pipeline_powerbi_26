@@ -251,36 +251,39 @@ with credit score mapped via `SWITCH` (Good=3, Above Standard=2, Standard=1, Bad
 ## 📁 Repository Structure
 
 ```
-financial-data-analytics-dashboard/
-│
-├── 📂 data/
-│   ├── raw/                           # Sample raw files (sanitized)
-│   └── processed/                     # Cleaned output samples
-│
-├── 📂 scripts/
-│   ├── google_drive_etl.py            # Python ETL: download + consolidate
-│   └── data_cleaning.py               # Additional cleaning utilities
-│
-├── 📂 power_bi/
-│   ├── Financial_Dashboard.pbix       # Power BI report file
-│   └── dax_measures.md                # Documentation of all DAX measures
-│
-├── 📂 power_query/
-│   └── m_code_reference.md            # M Language transformations reference
-│
-├── 📂 docs/
-│   ├── project_notes.md               # Detailed project notes
-│   └── architecture_diagram.png       # Pipeline architecture image
-│
-├── 📂 screenshots/
-│   ├── dashboard_overview.png
-│   ├── ltv_promotions.png
-│   └── loan_distribution.png
-│
-├── requirements.txt                   # Python dependencies
-├── .gitignore
-└── README.md                          # This file
+## 📁 Repository Structure
 
+```text
+Financial_pipeline_powerbi_26/
+│
+├── 📂 assets/
+│   ├── Page_01.png                      # Dashboard page 1 screenshot
+│   ├── Page_02.png                      # Dashboard page 2 screenshot
+│   ├── Page_03.png                      # Dashboard page 3 screenshot
+│   └── dashboard_overview.png           # Main dashboard overview image
+│
+├── 📂 dashboard/
+│   └── Financial Project.pbix           # Core Power BI report file
+│
+├── 📂 data/                             # Directory for raw and processed datasets
+│
+├── 📂 scr/
+│   ├── 📂 dax/
+│   │   ├── LoanTypeTable.dax            # DAX measures for loan types
+│   │   ├── Potential_Customers.dax      # DAX logic for identifying prospects
+│   │   ├── averageLoan.dax              # DAX measures for average loan amounts
+│   │   └── custome_VLT.dax              # DAX measures for customer LTV
+│   │
+│   ├── 📂 power_query/
+│   │   ├── Power_query_steps_01.png     # Power Query (M logic) documentation
+│   │   ├── power_query_stepts_02.png
+│   │   ├── power_query_steps_03.png
+│   │   └── power_query_steps_04.png
+│   │
+│   └── 📂 python/
+│       └── drive_combine_pipeline.ipynb # Jupyter notebook for ETL and file combination
+│
+└── README.md                            # Main project documentation file
 ```
 
 ---
