@@ -292,10 +292,10 @@ Financial_pipeline_powerbi_26/
 
 | Resource | Link |
 | --- | --- |
-| 📊 **Power BI Dashboard** | `[Insert link to published Power BI report]` |
-| 🐍 **Python ETL Script** | `[Insert GitHub/Gist link]` |
-| 📁 **Sample Dataset** | `[Insert link to sanitized sample data]` |
-| 📝 **Project Notes (DAX/Power Query)** | `[Insert link to documentation]` |
+| 📊 **Power BI Dashboard** | [View Dashboard](https://app.powerbi.com/groups/me/reports/1a30b8e5-8981-4534-8236-717ca2b0fd0f?ctid=95cd5fc7-eedf-4dcd-8986-48528f05d39f&pbi_source=linkShare&bookmarkGuid=da27139e-f350-4acb-a32c-b5f40a0b4e3b) |
+| 🐍 **Python ETL Script** | [Insert GitHub/Gist link](#) |
+| 📁 **Sample Dataset** | [Insert link to sanitized sample data](#) |
+| 📝 **Project Notes (DAX/Power Query)** | [Insert link to documentation](#) |
 
 ---
 
